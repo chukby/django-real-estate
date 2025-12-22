@@ -20,7 +20,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path("/cockpit", admin.site.urls), # changed /admin for security reasons
+    path("cockpit/", admin.site.urls), # changed /admin for security reasons
 
 ]
 if settings.DEBUG:

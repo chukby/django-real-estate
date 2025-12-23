@@ -27,3 +27,5 @@ class UserAdmin(BaseUserAdmin):
     )
     search_fields = ("email", "username", "first_name", "last_name")
     ordering = ("email",)
+
+admin.site.register(User, UserAdmin)
